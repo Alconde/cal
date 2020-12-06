@@ -7,16 +7,16 @@
 	<body>
 		<h1>Calculadora de Alvaro Conde San Martín</h1>
 		Number:
-		<input type="text" id="n1">
+		<input type="text" id="n1" onclick="empty()">
 		<p>
-            <button onclick="square()"> x<sup>2</sup> </button>
+            <button onclick="inverse()"> 1/x </button>
             
 		</p>
 		<script type="text/javascript">
 			
-            function square() {
+            function inverse() {
 				var num = document.getElementById("n1");
-				num.value = num.value * num.value;
+				num.value =  1/num.value;
 			}
 		</script>
 	</body>
